@@ -1,0 +1,40 @@
+@import "../../../styles/mixins";
+
+.book-app__table-view__rows__element {
+  display: flex;
+  height: 100px;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: rgba(211, 211, 211, 0.3);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  &__image-container {
+    @include flexMid;
+    min-width: 300px;
+  }
+
+  &__title {
+    @include flexMid;
+    min-width: 400px;
+    font-size: 20px;
+  }
+
+  &__content {
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+
+    p {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

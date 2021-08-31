@@ -1,0 +1,22 @@
+.book-app__navigation {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 50px;
+
+  &__view-mode {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: flex-start;
+    margin-left: 50px;
+  }
+
+  &__theme-selector {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+  }
+}

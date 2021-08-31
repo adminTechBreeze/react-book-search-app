@@ -1,0 +1,24 @@
+@mixin flex($flex-direction, $justify-content, $align-items) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin grid($gridTemplateColumns, $grid-column-gap) {
+  display: grid;
+  grid-template-columns: $gridTemplateColumns;
+  grid-column-gap: $grid-column-gap;
+}
+
+@mixin ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin flexMid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
